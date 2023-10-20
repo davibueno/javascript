@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País</title>
+</head>
+<body>
+    <h1>Onde você mora?</h1>  
+    <input type="text" name="ipais" id="ipais">
+    <input type="button" value="descubra" onclick="meupais()">
+    <div id="pais"></div>
+    <script>
+        function meupais(){
+            var brasil = document.querySelector('#ipais')
+            var res = document.querySelector('#pais')
+            var  all = brasil.value
+            if(all == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro'
+            }else{
+                res.innerHTML = 'você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
